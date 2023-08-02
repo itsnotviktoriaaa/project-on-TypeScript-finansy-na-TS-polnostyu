@@ -1,0 +1,153 @@
+.main {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+body {
+    color: #052C65 !important;
+}
+
+.dropdown-toggle::after {
+    content: unset;
+}
+
+.nav-pills .nav-link.active svg use {
+    fill: white;
+}
+
+.link-dark {
+    color: #052C65!important;
+}
+
+.link-dark:hover svg use{
+    fill: #1a1e21;
+}
+
+.link-dark:focus svg use{
+    fill: #1a1e21;
+}
+
+strong {
+    font-weight: 400;
+    color: #052C65
+}
+
+#balance {
+    color: #052C65;
+}
+
+#balance span {
+    color: #0D6EFD;
+}
+
+#category-group {
+    border-bottom-left-radius: 0.45rem;
+    border-bottom-right-radius: 0.45rem;
+}
+
+.category-border-white {
+    border: 1px solid #FFFFFF !important;
+}
+
+/* Если активна страница с категорией то ставим category-border-blue (#category-group) и active (для #catigory-main) и active-color для дохода или расхода (#category-income) */
+
+.category-border-blue {
+    border: 1px solid #0D6EFD !important;
+}
+
+.active-color {
+    background: #0D6EFD !important;
+    color: #FFFFFF !important;
+}
+
+#category-main[aria-expanded="true"] svg {
+    transform: rotate(90deg);
+}
+
+#category-main[aria-expanded="false"] {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#category-main[aria-expanded="true"] {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+#category-main svg {
+    transition: transform .35s ease;
+}
+
+#category-main svg {
+    left: 125px;
+    top: 1px;
+}
+
+#category-income {
+    border-radius: unset;
+}
+
+#category-expenses {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+.category {
+    max-width: 326px;
+}
+
+.category h2 {
+    color: #290661;
+}
+
+.category-add {
+    width: 326px;
+    height: 145px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.category-add:hover {
+    border: 1px solid #5d5d5d !important;
+}
+
+.category-add:hover svg path {
+    fill: #5d5d5d;
+}
+
+#collapseLogout {
+    width: fit-content;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.modal-content {
+    border: #CED4DA;
+}
+
+.modal p {
+    color: #290661;
+}
+
+.modal-footer {
+    border-top: unset;
+}
+
+#category-group .nav-link {
+    background: unset;
+}
+
+.img-button-delete {
+    padding: 0 3px;
+    margin-right: 5px;
+}
+
+.img-button-edit {
+    padding: 0 3px;
+    margin-left: 5px;
+}
+

@@ -1,0 +1,49 @@
+input[type="date"] {
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    width: 90px;
+}
+
+input[type="text"] {
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    width: 78px;
+    text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+    cursor: pointer;
+}
+
+input[type="date"]:focus-visible {
+    outline: unset;
+}
+
+td a {
+    color: white;
+}
+
+.td-short {
+    max-width: 118px;
+    overflow-x: auto;
+}
+
+
+

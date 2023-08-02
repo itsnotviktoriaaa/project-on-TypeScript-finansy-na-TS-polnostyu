@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sidebars.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link id="individual-css" rel="stylesheet">
+    <link id="individual-css1" rel="stylesheet">
+    <title id="title">Авторизация</title>
+</head>
+<body>
+
+<!--Если всё, что с баром слева ставим класс d-flex flex-nowrap и main, иначе (для логина и регистрации) пустой класс и не забываем ставить у bar класс d-flex, иначе d-none-->
+<div id="common-wrapper" class="">
+    <div id="common-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="home" viewBox="0 0 16 16">
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+            </symbol>
+            <symbol id="coins" viewBox="0 0 16 16">
+                <path clip-rule="evenodd"
+                      d="M11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15ZM16 11C16 13.7614 13.7614 16 11 16C8.23858 16 6 13.7614 6 11C6 8.23858 8.23858 6 11 6C13.7614 6 16 8.23858 16 11Z"
+                      color="#052C65"/>
+                <path d="M9.4375 11.9444C9.48519 12.5403 9.95568 13.0049 10.8013 13.0599V13.5H11.1764V13.0568C12.0507 12.9957 12.5625 12.5281 12.5625 11.8496C12.5625 11.2323 12.1715 10.9144 11.4721 10.7494L11.1764 10.6791V9.48105C11.5516 9.52384 11.79 9.72861 11.8472 10.0128H12.5053C12.4576 9.43826 11.9648 8.989 11.1764 8.9401V8.5H10.8013V8.94927C10.0542 9.02262 9.54559 9.47188 9.54559 10.1076C9.54559 10.6699 9.92389 11.0275 10.5533 11.1742L10.8013 11.2353V12.5067C10.4166 12.4487 10.1623 12.2378 10.1051 11.9444H9.4375ZM10.7981 10.5905C10.4294 10.5049 10.2291 10.3307 10.2291 10.0678C10.2291 9.77445 10.4453 9.5544 10.8013 9.49022V10.5905H10.7981ZM11.2305 11.3362C11.6787 11.4401 11.8854 11.6082 11.8854 11.9046C11.8854 12.2439 11.6279 12.4762 11.1764 12.5189V11.324L11.2305 11.3362Z"
+                      color="#052C65"/>
+                <path d="M1 0C0.447715 0 0 0.447716 0 1V9C0 9.55229 0.447715 10 1 10H5.08296C5.1407 9.65585 5.22773 9.32163 5.34141 9H3C3 7.89543 2.10457 7 1 7V3C2.10457 3 3 2.10457 3 1H13C13 2.10457 13.8954 3 15 3V6.52779C15.3801 6.86799 15.7166 7.25594 16 7.68221V1C16 0.447715 15.5523 0 15 0H1Z"
+                      color="#052C65"/>
+                <path d="M9.9983 5.08325C9.99943 5.05564 10 5.02789 10 5C10 3.89543 9.10457 3 8 3C6.89543 3 6 3.89543 6 5C6 5.6845 6.34387 6.28869 6.86829 6.64924C7.71486 5.84504 8.79591 5.28533 9.9983 5.08325Z"
+                      color="#052C65"/>
+            </symbol>
+            <symbol id="arrow" viewBox="0 0 16 16">
+                <path clip-rule="evenodd"
+                      d="M1.14512 13.3541C1.05108 13.2603 0.99823 13.1329 0.99823 13.0001C0.99823 12.8673 1.05108 12.7399 1.14512 12.6461L6.79212 7.00008L1.14512 1.35408C1.01865 1.22761 0.969259 1.04327 1.01555 0.87051C1.06184 0.697746 1.19679 0.562802 1.36955 0.51651C1.54231 0.470218 1.72665 0.51961 1.85312 0.646083L7.85312 6.64608C7.94717 6.73989 8.00002 6.86726 8.00002 7.00008C8.00002 7.13291 7.94717 7.26028 7.85312 7.35408L1.85312 13.3541C1.75932 13.4481 1.63195 13.501 1.49912 13.501C1.3663 13.501 1.23893 13.4481 1.14512 13.3541Z"
+                      color="#052C65"/>
+            </symbol>
+        </svg>
+    </div>
+    <div id="common-bar" class="d-none flex-column flex-shrink-0 py-3 bg-light" style="width: 280px;">
+        <a href="#/grafika" class="d-flex align-items-center mt-3 mb-2 m-auto link-dark text-decoration-none">
+            <img src="images/logoMain.png" alt="Логотип">
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column px-3 mt-3 mb-auto">
+            <li class="nav-item">
+                <a id="grafika" href="#/grafika" class="nav-link link-dark" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"/>
+                    </svg>
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a id="income-expenses" href="#/incomeExpenses" class="nav-link link-dark">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#coins"/>
+                    </svg>
+                    Доходы & Расходы
+                </a>
+            </li>
+            <li>
+                <div id="category">
+                    <a id="category-main" class="nav-link link-dark" data-bs-toggle="collapse" href="#category-group" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Категории
+                        <svg class="bi pe-none position-relative" width="16" height="16">
+                            <use xlink:href="#arrow"/>
+                        </svg>
+                    </a>
+                    <div id="category-group" class="category-border-white collapse">
+                        <a id="category-income" href="#/income" class="nav-link link-dark">Доходы</a>
+                        <a id="category-expenses" href="#/expenses" class="nav-link link-dark">Расходы</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="balance" class="px-3 fw-semibold">
+            Баланс:
+            <span id="balance-amount"></span>
+        </div>
+        <hr>
+        <div class="dropdown px-3">
+            <a class="d-flex align-items-center link-dark text-decoration-none"
+               data-bs-toggle="collapse" href="#collapseLogout" role="button" aria-expanded="false"
+               aria-controls="collapseExample">
+                <img src="images/avatar.png" alt="" width="36" height="36" class="rounded-circle me-3">
+                <strong id="full-name-user" class="link-dark">RomanChernov</strong>
+            </a>
+            <div class="collapse text-small link-dark mt-2" id="collapseLogout">
+                <a href="#/logout" class="dropdown-item">Выйти</a>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="w-100"></div>
+</div>
+
+<!--<script src="src/app.ts" type="module"></script>-->
+
+<!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+<!--<script src="src/components/grafika.ts" type="module"></script>-->
+</body>
+</html>

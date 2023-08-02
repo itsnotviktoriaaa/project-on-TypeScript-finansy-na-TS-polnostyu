@@ -1,0 +1,31 @@
+
+<div class="income p-5">
+    <h1 class="mb-5 fw-semibold">Редактирование дохода/расхода</h1>
+    <div class="mb-2">
+        <select id="choose-type" class="dropdown-type form-control" name="chooseType">
+            <option value="" disabled hidden>Тип...</option>
+            <option class="dropdownplus" value="valueA">Доход</option>
+            <option class="dropdownplus" value="valueB">Расход</option>
+        </select>
+    </div>
+    <div class="mb-2">
+        <select id="choose-category" class="dropdown-type form-control" name="chooseCategory">
+            <option value="" disabled hidden>Категория...</option>
+        </select>
+    </div>
+    <div class="mb-2">
+        <input id="put-amount" class="choose dropdown-type form-control" placeholder="Сумма в $...">
+    </div>
+    <div class="mb-2">
+        <input id="put-date" class="form-control choose" placeholder="Дата" type="text"
+               onfocus="this.type='date'" onblur="if(this.value==''){this.type='text'}">
+    </div>
+    <div class="mb-2">
+        <input id="put-comment" class="form-control choose" placeholder="Комментарий..." type="text">
+    </div>
+    <div id="error" class="d-none text-danger mb-2">Error</div>
+    <div class="d-flex column-gap-2 mt-3">
+        <button id="edit-income-expenses-item" type="button" class="btn btn-success" title="Все поля должны быть заполнены">Сохранить</button>
+        <a href="#/incomeExpenses" type="button" class="btn btn-danger">Отмена</a>
+    </div>
+</div>

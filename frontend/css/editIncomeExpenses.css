@@ -1,0 +1,38 @@
+input[type="date"] {
+    position: relative;
+    cursor: pointer;
+    color: black;
+}
+
+input[type="text"] {
+    position: relative;
+    cursor: pointer;
+    color: black;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+    cursor: pointer;
+}
+
+input[type="date"]:focus-visible {
+    outline: unset;
+}
+
+.choose::placeholder {
+    color: #6C757D;
+}

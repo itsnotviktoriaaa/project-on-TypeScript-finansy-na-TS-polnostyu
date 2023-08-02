@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Roboto-Regilar";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+
+body {
+    font-family: "Roboto-Regilar", sans-serif !important;
+}
+
+#content {
+    overflow: auto;
+}
+
+.h3 {
+    color: #052C65;
+}
+
+.checkbox-label {
+    line-height: 4px;
+}
+
+.mh {
+    min-height: 100vh;
+}
+
+.form-signin {
+    width: 397px;
+}
+
+.btn:disabled {
+    pointer-events: unset;
+}
+
+#process:disabled {
+    cursor: not-allowed;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+    pointer-events: unset !important;
+}

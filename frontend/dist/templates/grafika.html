@@ -1,0 +1,38 @@
+
+<div class="incomeExpenses p-5 w-100">
+    <h1 class="mb-5 fw-semibold">Главная</h1>
+    <div class="d-flex flex-column gap-3">
+        <div class="d-flex align-items-center gap-4 mt-3 mb-5">
+            <button id="today-button" type="button" class="btn btn-common btn-secondary fw-semibold">Сегодня</button>
+            <button id="week-button" type="button" class="btn btn-common btn-outline-secondary fw-semibold">Неделя</button>
+            <button id="month-button" type="button" class="btn btn-common btn-outline-secondary fw-semibold">Месяц</button>
+            <button id="year-button" type="button" class="btn btn-common btn-outline-secondary fw-semibold">Год</button>
+            <button id="all-button" type="button" class="btn btn-common btn-outline-secondary fw-semibold">Все</button>
+            <button id="interval-button" type="button" class="btn btn-common btn-outline-secondary fw-semibold">Интервал</button>
+            <div class="fw-semibold text-dark">c</div>
+            <div class="border-bottom border-secondary">
+                <input id="date-from" class="fw-semibold text-secondary" placeholder="Дата" type="text"
+                       onfocus="this.type='date'" onblur="if(this.value==''){this.type='text'}">
+            </div>
+            <div class="fw-semibold text-dark">по</div>
+            <div class="border-bottom border-secondary">
+                <input id="date-to" class="fw-semibold text-secondary" placeholder="Дата" type="text"
+                       onfocus="this.type='date'" onblur="if(this.value==''){this.type='text'}">
+            </div>
+        </div>
+        <div class="d-flex align-items-center column-gap-5">
+            <div class="px-5 border-end">
+                <h2 class="mb-3 fw-semibold text-center">Доходы</h2>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="px-5">
+                <h2 class="mb-3 fw-semibold text-center">Расходы</h2>
+                <div>
+                    <canvas id="myChart1"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

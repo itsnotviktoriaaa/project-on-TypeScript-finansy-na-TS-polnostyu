@@ -1,0 +1,8 @@
+h2 {
+    color: #290661;
+}
+
+#myChart, #myChart1 {
+    width: 360px;
+    height: 360px;
+}
